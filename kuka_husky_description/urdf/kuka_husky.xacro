@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="kuka_husky">
+
+  <xacro:include filename="/home/mahesh/git/mahesh/bullet3/data/husky/husky.urdf"/>
+  <xacro:include filename="/home/mahesh/git/mahesh/bullet3/data/kuka_iiwa/model.urdf"/>
+
+  <!-- <link name="map"/> -->
+
+  <iai_donbot/>
+
+  <joint name="arm_base_mounting_joint" type="fixed">
+    <parent link="base_link" />
+    <child link="lbr_iiwa_link_0" />
+    <origin xyz="0 0 0" rpy="0.0 0.0 0.0" />
+  </joint>
+
+</robot>

@@ -1,0 +1,10 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: kuka_husky_description
+    relative_path: urdf/kuka_husky.urdf
+  SRDF:
+    relative_path: config/kuka_husky.srdf
+  CONFIG:
+    author_name: Mahesh
+    author_email: mahe.kumar@hotmail.com
+    generated_timestamp: 1523443268
